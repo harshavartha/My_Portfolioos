@@ -28,5 +28,6 @@ export const credentials = [
     image: '/images/kumaraguru-kgeo.png',
     imageFit: 'contain',
     imageBg: 'bg-white',
+    link: '/Appreciation_Letter_Kgeo.pdf',
   },
 ]
