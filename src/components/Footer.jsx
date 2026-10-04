@@ -21,7 +21,7 @@ export default function Footer() {
             <Linkedin size={20} />
           </a>
           <a
-            href="/resume.pdf"
+            href="/Harshavarthan%20CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-zinc-400 hover:text-emerald-400 transition-colors group"

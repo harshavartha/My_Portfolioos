@@ -11,6 +11,7 @@ export const credentials = [
     issuer: 'Kumaraguru College of Technology',
     desc: 'Honored for independently propelling technical innovation and outstanding real-world achievements.',
     image: '/images/image-4.jpg',
+    link: '/KCT_Certificate.pdf',
   },
   {
     title: 'Letter of Appreciation',

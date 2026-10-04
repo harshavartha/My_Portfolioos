@@ -18,15 +18,7 @@ export default function Hero() {
           className="flex flex-col space-y-10"
         >
           <div className="space-y-4">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="flex items-center gap-3"
-            >
-              <div className="h-[1px] w-8 bg-white/30" />
-              <p className="text-zinc-400 font-medium tracking-[0.2em] text-xs uppercase">Portfolios 26'</p>
-            </motion.div>
+
             <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tighter text-white leading-[1.05]">
               <span className="block">Harshavarthan</span>
               <span className="block text-zinc-500">Venkatesan.</span>
@@ -71,7 +63,7 @@ export default function Hero() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="/resume.pdf"
+              href="/Harshavarthan%20CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 px-6 md:px-8 py-4 bg-transparent border border-white/20 rounded-full text-white font-medium transition-all hover:bg-white/5 hover:border-white/40"

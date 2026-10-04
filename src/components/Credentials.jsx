@@ -20,13 +20,29 @@ export default function Credentials() {
               transition={{ delay: i * 0.1, duration: 0.6 }}
               className="glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center group hover:bg-[#111] transition-colors"
             >
-              <div className={`w-full md:w-1/3 aspect-[4/3] rounded-xl overflow-hidden ${c.imageBg || 'bg-black'} flex-shrink-0 flex items-center justify-center`}>
-                <img
-                  src={c.image}
-                  alt={c.title}
-                  className={`w-full h-full ${c.imageFit === 'contain' ? 'object-contain p-4' : 'object-cover'} opacity-90 group-hover:opacity-100 transition-opacity`}
-                />
-              </div>
+              {c.link ? (
+                <a
+                  href={c.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full md:w-1/3 aspect-[4/3] rounded-xl overflow-hidden ${c.imageBg || 'bg-black'} flex-shrink-0 flex items-center justify-center cursor-pointer`}
+                  title={`Open ${c.title}`}
+                >
+                  <img
+                    src={c.image}
+                    alt={c.title}
+                    className={`w-full h-full ${c.imageFit === 'contain' ? 'object-contain p-4' : 'object-cover'} opacity-90 group-hover:opacity-100 transition-opacity`}
+                  />
+                </a>
+              ) : (
+                <div className={`w-full md:w-1/3 aspect-[4/3] rounded-xl overflow-hidden ${c.imageBg || 'bg-black'} flex-shrink-0 flex items-center justify-center`}>
+                  <img
+                    src={c.image}
+                    alt={c.title}
+                    className={`w-full h-full ${c.imageFit === 'contain' ? 'object-contain p-4' : 'object-cover'} opacity-90 group-hover:opacity-100 transition-opacity`}
+                  />
+                </div>
+              )}
               <div className="flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-white mb-2">{c.title}</h3>
                 <p className="text-sm font-medium text-zinc-400 mb-4">{c.issuer}</p>
