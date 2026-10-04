@@ -63,7 +63,7 @@ export default function Hero() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="/Harshavarthan%20CV.pdf"
+              href="/Harshavarthan%20Venkatesan%20CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 px-6 md:px-8 py-4 bg-transparent border border-white/20 rounded-full text-white font-medium transition-all hover:bg-white/5 hover:border-white/40"
